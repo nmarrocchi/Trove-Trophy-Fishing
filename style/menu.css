@@ -1,0 +1,27 @@
+.Banner{
+    list-style : none;
+    width: 100%;
+    background-color: rgb(0, 0, 168);
+    border-bottom: solid black 1px;
+    text-align: center;
+}
+
+.Banner li{
+    display: inline-block;
+    min-width: 165px;
+    width: auto;
+    height: 51px;
+    background-image: url(../img/Button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 51px;
+    font-size: 20px;
+}
+
+.Banner li:hover{
+    background-image: url(../img/Button_Hover.png);
+}
+
+.Banner li:active{
+    background-image: url(../img/Button_Clicked.png);
+}
