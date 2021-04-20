@@ -1,6 +1,5 @@
-<ul class="Banner">
+<div class="Banner">
 
-    <a href="" ><li>Home</li></a>
-    <a href="" ><li>Fish List</li></a>
+    <?php include 'menu.php' ?>
 
-</ul>
+</div>

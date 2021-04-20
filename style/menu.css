@@ -1,27 +1,127 @@
-.Banner{
-    list-style : none;
-    width: 100%;
-    background-color: rgb(0, 0, 168);
-    border-bottom: solid black 1px;
+
+/* Les Menus */
+
+.menu{
+    padding: 11px auto;
+}
+
+.menu, .menu ul{
+    list-style: none;
     text-align: center;
 }
 
-.Banner li{
+.menu li{
     display: inline-block;
-    min-width: 165px;
-    width: auto;
-    height: 51px;
+    position: relative;
+    margin: 16px 20px;
     background-image: url(../img/Button.png);
-    background-repeat: no-repeat;
+    width: 222px;
+    height: 68px;
     background-size: cover;
-    line-height: 51px;
-    font-size: 20px;
+    background-repeat: no-repeat;
+    line-height: 68px;
 }
 
-.Banner li:hover{
+.menu li:hover{
+    background-image: url(../img/Button_Hover.png)
+}
+
+.menu li:active{
+    background-image: url(../img/Button_Clicked.png)
+}
+
+.menu li ul li{
+    display: inherit;
+    margin: 5px auto;
+    border-radius: 0px;
+    background-color: transparent;
+    width: 167px;
+    height: 51px;
+    line-height: 51px;
+}
+
+.menu li ul li:hover{
     background-image: url(../img/Button_Hover.png);
 }
 
-.Banner li:active{
+.menu li ul li:active{
     background-image: url(../img/Button_Clicked.png);
+}
+
+.menu ul li:hover{
+    border-radius:0;
+    background-image: url(../img/Button_Hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu ul{
+    position: absolute;
+    z-index: 1000;
+    max-height: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+.menu li:hover ul{
+    max-height:30em;
+    background-color: transparent;
+}
+    
+/* les liens */
+
+.menu a{
+    text-decoration:none;
+    display:block;
+    color:#fff;
+    font-size: larger;
+}
+
+.menu li:hover li a{
+    color:#fff;
+    text-transform:inherit;
+}
+
+.menu li:hover a, .menu li li:hover a{
+    color:#fff;
+}
+
+/* ------------------------------------- */
+
+
+.User_Connect{
+    float: left;
+    position: absolute;
+    top: 33px;
+}
+
+.User_Connect li{
+    display: inline-block;
+    position: relative;
+    margin: 0px 20px;
+    background-image: url(../img/Button.png);
+    width: 111px;
+    height: 34px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 34px;
+}
+
+.User_Connect li:hover{
+    background-image: url(../img/Button_Hover.png);
+}
+
+.User_Connect li:active{
+    background-image: url(../img/Button_Clicked.png);
+}
+
+.User_Connect a{
+    text-decoration:none;
+    display:block;
+    color:#fff;
+    font-size: medium;
 }
