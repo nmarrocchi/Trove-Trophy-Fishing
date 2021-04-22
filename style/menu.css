@@ -23,7 +23,8 @@
 }
 
 .menu li:hover{
-    background-image: url(../img/Button_Hover.png)
+    background-image: url(../img/Button_Hover.png);
+    cursor: url(../img/Cursor.cur), pointer;
 }
 
 .menu li:active{
@@ -42,6 +43,7 @@
 
 .menu li ul li:hover{
     background-image: url(../img/Button_Hover.png);
+    cursor: url(../img/Cursor.cur), pointer;
 }
 
 .menu li ul li:active{
@@ -51,6 +53,7 @@
 .menu ul li:hover{
     border-radius:0;
     background-image: url(../img/Button_Hover.png);
+    cursor: url(../img/Cursor.cur), pointer;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -70,6 +73,7 @@
 .menu li:hover ul{
     max-height:30em;
     background-color: transparent;
+    cursor: url(../img/Cursor.cur), pointer;
 }
     
 /* les liens */
@@ -84,10 +88,12 @@
 .menu li:hover li a{
     color:#fff;
     text-transform:inherit;
+    cursor: url(../img/Cursor.cur), pointer;
 }
 
 .menu li:hover a, .menu li li:hover a{
     color:#fff;
+    cursor: url(../img/Cursor.cur), pointer;
 }
 
 /* ------------------------------------- */
@@ -113,6 +119,7 @@
 
 .User_Connect li:hover{
     background-image: url(../img/Button_Hover.png);
+    cursor: url(../img/Cursor.cur), pointer;
 }
 
 .User_Connect li:active{

@@ -4,12 +4,17 @@
 }
 
 html{
+    cursor: url(../img/Cursor.cur), pointer;
     background-image: url(../img/Background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: white;
     font-weight: bold;
+}
+
+a:hover{
+    cursor: url(../img/Cursor.cur), pointer;
 }
 
 a:link {color: white; text-decoration: none;}
